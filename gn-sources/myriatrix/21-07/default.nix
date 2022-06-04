@@ -1,13 +1,22 @@
-{ stdenv, fetchurl }:
+{ lib, stdenv, fetchurl }:
 
 let
-src = import "../../sources.nix";
+data = import ../../sources.nix;
 
 in 
-stdenv.mkDerivation {
-  name = "myriatrix-20-05";
+stdenv.mkDerivation rec {
+  pname = "myriatrix";
+  version = "20-05";
+  name = pname + "-" + version;
   src = fetchurl {
-    url = src.url + src.myriatrix-20-05.file;
-    sha256 = srs.myriatrix-20-05.sha;
+    url = data.url + data.${name}.file;
+    sha256 = data.${name}.sha256;
+  };
+
+  meta = with lib; {
+    description = "Myriatrix database";
+    homepage = "http://myriatrix.myspecies.info";
+    license = licenses.cc0;
+    maintainers = with maintainers; [ "dimus" ];
   };
 }

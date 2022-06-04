@@ -7,12 +7,14 @@
   };
 
   outputs = { self, nixpkgs }:
-  let
-   system = "x86_64-linux";
-   pkgs = nixpkgs.legacyPackages.${system};
+    let
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
 
-  in
-  with pkgs; {
-    myriatrix = callPackage ./gn-sources/myriatrix/21-07;
-  };
+    in
+    with pkgs; {
+      legacyPackages.${system} = {
+      myriatrix = callPackage ./gn-sources/myriatrix/21-07 {};
+    };
+};
 }

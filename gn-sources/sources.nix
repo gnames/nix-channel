@@ -1,5 +1,5 @@
 {
-  gn-url = "http://opendata.globalnames.org/dwca/";
+  url = "http://opendata.globalnames.org/dwca/";
 
   myriatrix-20-05 = {
     file = "193-Myriatrix-2020-05-30.tar.gz";
