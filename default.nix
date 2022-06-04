@@ -1,6 +1,3 @@
-let
-  # Import sources
-  sources = import ./nix/sources.nix;
-
-# And return that specific nixpkgs
-in sources.nixpkgs
+# This file is necessary so nix-env -qa does not break,
+# when nixos-hardware is used as a channel
+{}
