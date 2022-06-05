@@ -1,4 +1,4 @@
-{ lib, stdenv, fetchurl, pname, version, description, homepage }:
+{ lib, stdenv, fetchurl, url, pname, version, description, homepage }:
 
 let
 data = import ./sources.nix;
@@ -10,7 +10,7 @@ stdenv.mkDerivation rec {
   name = pname + "-" + version;
 
   src = fetchurl {
-    url = data.url + data.${name}.file;
+    url = url + data.${name}.file;
     sha256 = data.${name}.sha256;
   };
 

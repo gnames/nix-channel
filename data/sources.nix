@@ -1,5 +1,8 @@
 {
-  url = "http://opendata.globalnames.org/dwca/";
+  url = {
+    gn = "http://opendata.globalnames.org/dwca/";
+    irmng = "https://www.irmng.org/export/";
+  };
 
   gn-col-16-00 = {
     file = "001-col-2016.tar.gz";
@@ -85,4 +88,9 @@
     file = "193-Myriatrix-2021-07-06.tar.gz";
     sha256 = "0xgnbykqiy48i7if51jh6y8w8xbbmvx80hrc976c54jvcbkvbagb";
   };
+  
+  irmng-22-05 = {
+    file = "2022/IRMNG_genera_DwCA_2022-05-23.zip";    
+    sha256 = "1pb3ihx5m054py16y6iynk5azxp47f88yq3pwsivv1p054j68bz3";
+  };  
 }

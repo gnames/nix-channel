@@ -51,8 +51,7 @@
         inherit (callPackage ./data/irmng {})
           irmng_22_05
         ;
-        irmng = irmnt_22_05;
-
+        irmng = irmng_22_05;
       };
     };
 }
