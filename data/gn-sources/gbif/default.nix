@@ -1,4 +1,4 @@
-{jjga lib, stdenv, fetchurl }:
+{ lib, stdenv, fetchurl }:
 
 let
 generic = import ../generic.nix;

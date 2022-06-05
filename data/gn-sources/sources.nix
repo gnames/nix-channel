@@ -36,6 +36,41 @@
     sha256 = "1h40i2j1wxsma44hiiy4qj6k75756m70xgxbxxa62m404l5zb271";
   };
 
+  gbif-15-07 = {
+    file = "011-gbif-2015-07-25.tar.gz";
+    sha256 = "02sahqk2nl6hhncm089j6hfki7djlnvspslrn1psqfq2k5ihqa52";
+  };
+
+  gbif-17-02 = {
+    file = "011-gbif-2017-02-13.tar.gz";
+    sha256 = "1afipp0db60b2a5y66vfk85p5q9crh3jchmjdrxxzq17wwm9cb8n";
+  };
+
+  gbif-19-09 = {
+    file = "011-gbif-2019-09.tar.gz";
+    sha256 = "1gfcjn48bfqcq2a3m57gdln1axy4psxajjx799g6x5631fji5c3d";
+  };
+
+  gbif-20-05 = {
+    file = "011-gbif-2020-05-28.tar.gz";
+    sha256 = "06ijdyr23rakpdjm41plfv536b7qiiwncw92yrblr88yh8283scy";
+  };
+
+  gbif-21-01 = {
+    file = "011-gbif-2021-01-25.tar.gz";
+    sha256 = "0v7cc2jhp6bzp9qzvjv04gxkl1c24yx5qr75r2vgamzc6rb24aaj";
+  };
+
+  gbif-21-06 = {
+    file = "011-gbif-2021-06-22.tar.gz";
+    sha256 = "1jhdmgcnciiq6rswwg7dgi79pb2w837gic9vycgv26yjrq54qmn7";
+  };
+
+  gbif-21-12 = {
+    file = "011-gbif-2021-12-08.tar.gz";
+    sha256 = "0hkr7pgp03vdwjq0izc6w5y7gdip461j7wr67k28pc60sbnfag7m";
+  };
+
   myriatrix-20-05 = {
     file = "193-Myriatrix-2020-05-30.tar.gz";
     sha256 = "0hg0vmcbxrc63nnp8v9hmpas2nfsaihpaqns2s6qmwmns81z0dky";
