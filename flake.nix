@@ -13,7 +13,7 @@
 
     in
     with pkgs; {
-      legacyPackages.${system} = {
+      legacyPackages.${system} = rec {
 
       myriatrix-20-05 = callPackage ./gn-sources/myriatrix/20-05 {};
       myriatrix-21-02 = callPackage ./gn-sources/myriatrix/21-02 {};
