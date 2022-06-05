@@ -1,4 +1,4 @@
-{ lib, stdenv, fetchurl }:
+{ lib, stdenv, fetchurl, coreutils }:
 
 let
 data = import ../../sources.nix;
@@ -13,8 +13,14 @@ stdenv.mkDerivation rec {
     url = data.url + data.${name}.file;
     sha256 = data.${name}.sha256;
   };
-
-  builder = ../../builder.sh;
+  
+  unpackPhase = "true";
+    
+  installPhase = ''
+    mkdir -p $out/share
+    
+    cp $src $out/share
+  '';
   
   meta = with lib; {
     description = "Myriatrix database";
