@@ -8,17 +8,20 @@
 
   outputs = { self, nixpkgs }:
     let
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
+    system = "x86_64-linux";
+  pkgs = nixpkgs.legacyPackages.${system};
 
-    in
+  in
     with pkgs; {
       legacyPackages.${system} = rec {
 
-      myriatrix-20-05 = callPackage ./gn-sources/myriatrix/20-05 {};
-      myriatrix-21-02 = callPackage ./gn-sources/myriatrix/21-02 {};
-      myriatrix-21-07 = callPackage ./gn-sources/myriatrix/21-07 {};
-      myriatrix = myriatrix-21-07;
+        inherit (callPackage ./gn-sources/myriatrix {})
+          myriatrix_20_05
+          myriatrix_21_02
+          myriatrix_21_07
+        ;
+        myriatrix = myriatrix_21_07;
+
+      };
     };
-};
 }

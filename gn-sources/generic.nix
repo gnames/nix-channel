@@ -1,30 +1,30 @@
-{ lib, stdenv, fetchurl, coreutils }:
+{ lib, stdenv, fetchurl, pname, version, description, homepage }:
 
 let
-data = import ../../sources.nix;
+data = import ./sources.nix;
+dir = "share/gn/data-sources";
 
-in 
+in
+
 stdenv.mkDerivation rec {
-  pname = "myriatrix";
-  version = "21-07";
+  inherit pname version;
   name = pname + "-" + version;
 
   src = fetchurl {
     url = data.url + data.${name}.file;
     sha256 = data.${name}.sha256;
   };
-  
+
   unpackPhase = "true";
-    
+
   installPhase = ''
-    mkdir -p $out/share
-    
-    cp $src $out/share
+    mkdir -p $out/${dir}
+
+    cp $src $out/${dir}/${pname}.tar.gz
   '';
-  
+
   meta = with lib; {
-    description = "Myriatrix database";
-    homepage = "http://myriatrix.myspecies.info";
+    inherit description homepage;
     license = licenses.cc0;
     maintainers = with maintainers; [ "dimus" ];
   };
