@@ -20,33 +20,33 @@
 
         # GlobalNames Data
         inherit (callPackage ./data/gn-sources/col {})
-          col_16_00
-          col_17_00
-          col_18_00
-          col_19_00
-          col_20_06
-          col_21_06
-          col_21_10
+          gn-col_16_00
+          gn-col_17_00
+          gn-col_18_00
+          gn-col_19_00
+          gn-col_20_06
+          gn-col_21_06
+          gn-col_21_10
         ;
-        col = col_21_10;
+        gn-col = gn-col_21_10;
 
         inherit (callPackage ./data/gn-sources/gbif {})
-          gbif_15_07
-          gbif_17_02
-          gbif_19_09
-          gbif_20_05
-          gbif_21_01
-          gbif_21_06
-          gbif_21_12
+          gn-gbif_15_07
+          gn-gbif_17_02
+          gn-gbif_19_09
+          gn-gbif_20_05
+          gn-gbif_21_01
+          gn-gbif_21_06
+          gn-gbif_21_12
         ;
-        gbif = gbif_21_12;
+        gn-gbif = gn-gbif_21_12;
 
         inherit (callPackage ./data/gn-sources/myriatrix {})
-          myriatrix_20_05
-          myriatrix_21_02
-          myriatrix_21_07
+          gn-myriatrix_20_05
+          gn-myriatrix_21_02
+          gn-myriatrix_21_07
         ;
-        myriatrix = myriatrix_21_07;
+        gn-myriatrix = gn-myriatrix_21_07;
 
       };
     };
