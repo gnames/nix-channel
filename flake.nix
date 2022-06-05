@@ -19,7 +19,7 @@
         gnparser = callPackage ./applications/gnparser { };
 
         # GlobalNames Data
-        inherit (callPackage ./gn-sources/col {})
+        inherit (callPackage ./data/gn-sources/col {})
           col_16_00
           col_17_00
           col_18_00
@@ -30,7 +30,18 @@
         ;
         col = col_21_10;
 
-        inherit (callPackage ./gn-sources/myriatrix {})
+        inherit (callPackage ./data/gn-sources/gbif {})
+          gbif_15_07
+          gbif_17_02
+          gbif_19_09
+          gbif_20_05
+          gbif_21_01
+          gbif_21_06
+          gbif_21_12
+        ;
+        gbif = gbif_21_12;
+
+        inherit (callPackage ./data/gn-sources/myriatrix {})
           myriatrix_20_05
           myriatrix_21_02
           myriatrix_21_07
