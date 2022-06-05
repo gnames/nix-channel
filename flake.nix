@@ -15,8 +15,10 @@
   in
     with pkgs; {
       legacyPackages.${system} = rec {
-        gnparser = callPackage ../applications/gnparser { };
+        # APPLICATIONS
+        gnparser = callPackage ./applications/gnparser { };
 
+        # GlobalNames Data
         inherit (callPackage ./gn-sources/col {})
           col_16_00
           col_17_00
