@@ -1,7 +1,7 @@
 { lib, stdenv, fetchurl, pname, version, description, homepage }:
 
 let
-data = import ./sources.nix;
+data = import ../sources.nix;
 dir = "share/gn/data-sources";
 
 in

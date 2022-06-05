@@ -48,6 +48,11 @@
         ;
         gn-myriatrix = gn-myriatrix_21_07;
 
+        inherit (callPackage ./data/irmng {})
+          irmng_22_05
+        ;
+        irmng = irmnt_22_05;
+
       };
     };
 }
