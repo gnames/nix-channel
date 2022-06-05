@@ -15,6 +15,7 @@
   in
     with pkgs; {
       legacyPackages.${system} = rec {
+        gnparser = callPackage ../applications/gnparser { };
 
         inherit (callPackage ./gn-sources/col {})
           col_16_00
