@@ -7,13 +7,25 @@
   };
 
   outputs = { self, nixpkgs }:
-    let
+
+  let
     system = "x86_64-linux";
-  pkgs = nixpkgs.legacyPackages.${system};
+    pkgs = nixpkgs.legacyPackages.${system};
 
   in
     with pkgs; {
       legacyPackages.${system} = rec {
+
+        inherit (callPackage ./gn-sources/col {})
+          col_16_00
+          col_17_00
+          col_18_00
+          col_19_00
+          col_20_06
+          col_21_06
+          col_21_10
+        ;
+        col = col_21_10;
 
         inherit (callPackage ./gn-sources/myriatrix {})
           myriatrix_20_05
