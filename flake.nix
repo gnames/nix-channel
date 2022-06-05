@@ -49,6 +49,12 @@
         gn-myriatrix = gn-myriatrix_21_07;
 
         inherit (callPackage ./data/irmng {})
+          irmng_14_01
+          irmng_17_12
+          irmng_18_03
+          irmng_19_03
+          irmng_20_03
+          irmng_21_05
           irmng_22_05
         ;
         irmng = irmng_22_05;

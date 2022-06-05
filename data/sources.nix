@@ -88,7 +88,37 @@
     file = "193-Myriatrix-2021-07-06.tar.gz";
     sha256 = "0xgnbykqiy48i7if51jh6y8w8xbbmvx80hrc976c54jvcbkvbagb";
   };
-  
+
+  irmng-14-01 = {
+    file = "2014/IRMNG_DWC_2014-01-30.zip";    
+    sha256 = "1i64i2c37p9wx3zmrk3b4iljs379fkzwhyr76qy2b12yl61vqb42";
+  };  
+
+  irmng-17-12 = {
+    file = "2017/IRMNG_genera_DwCA_2017-12-01.zip";    
+    sha256 = "0dafczw61k70l7h81wqncibs8pmyfs634l5zk2ww5kp8kibq2q0p";
+  };  
+
+  irmng-18-03 = {
+    file = "2018/IRMNG_genera_DwCA_2018-03-20.zip";    
+    sha256 = "075l8ghwjf1gpxjdyr8fh93ral2hf5rp0pnv1j5b16w313jbhkx6";
+  };  
+
+  irmng-19-03 = {
+    file = "2019/IRMNG_genera_DwCA_2019-03-02.zip";    
+    sha256 = "04dvmf46n492b1is67rascswrxxbpgmpmglhzqnrma3ihbfn9xjc";
+  };  
+
+  irmng-20-03 = {
+    file = "2020/IRMNG_genera_DwCA_2020-03-24.zip";    
+    sha256 = "0bgxzgyxzdgrda8lycgk4dhasxk33vk6ajmjsryw4xzay8481ysn";
+  };  
+
+  irmng-21-05 = {
+    file = "2021/IRMNG_genera_DwCA_2021-05-11.zip";
+    sha256 = "0dp0yb6bwdjnxr29pm6r95z7khaafqfv15b0k8qjbbl0gfshqv0h";
+  };  
+
   irmng-22-05 = {
     file = "2022/IRMNG_genera_DwCA_2022-05-23.zip";    
     sha256 = "1pb3ihx5m054py16y6iynk5azxp47f88yq3pwsivv1p054j68bz3";
