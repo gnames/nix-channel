@@ -50,6 +50,11 @@
     sha256 = "02sahqk2nl6hhncm089j6hfki7djlnvspslrn1psqfq2k5ihqa52";
   };
 
+  gn-index-fungorum-21-01 = {
+    file = "005-index-fungorum-2021-01-07.tar.gz";
+    sha256 = "02sahqk2nl6hhncm089j6hfki7djlnvspslrn1psqfq2k5ihqa52";
+  };
+
   gn-gbif-17-02 = {
     file = "011-gbif-2017-02-13.tar.gz";
     sha256 = "1afipp0db60b2a5y66vfk85p5q9crh3jchmjdrxxzq17wwm9cb8n";
