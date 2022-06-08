@@ -19,7 +19,13 @@ stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out/${dir}
 
-    cp $src $out/${dir}/${pname}.tar.gz
+    ext="tar.gz"
+    case $src in *.zip)
+      ext="zip"
+      ;;
+    esac
+
+    cp $src $out/${dir}/${pname}.$ext
   '';
 
   meta = with lib; {

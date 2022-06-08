@@ -1,7 +1,13 @@
 {
   url = {
     gn = "http://opendata.globalnames.org/dwca/";
+    gnames = "http://opendata.globalnames.org/dumps/";
     irmng = "https://www.irmng.org/export/";
+  };
+  
+  gnamesdb-22-01 = {
+    file = "gnames-2022-01-30.tar.gz";
+    sha256 = "0qkmzvfd1aby3ilnps89zkhrgvs5xc98c38wq4z8akgxz05fq6kn";
   };
 
   gn-col-16-00 = {
