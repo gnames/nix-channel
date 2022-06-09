@@ -52,7 +52,7 @@
 
   gn-index-fungorum-21-01 = {
     file = "005-index-fungorum-2021-01-07.tar.gz";
-    sha256 = "02sahqk2nl6hhncm089j6hfki7djlnvspslrn1psqfq2k5ihqa52";
+    sha256 = "1mv7qivva1hgfckpphcbbb937a4w6cmgicv3n5ckdn4xnx72rqsm";
   };
 
   gn-gbif-17-02 = {
