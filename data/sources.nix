@@ -6,7 +6,7 @@
   };
   
   gnamesdb-22-01 = {
-    file = "gnames-2022-01-30.tar.gz";
+    file = "gnames-2022-01-30.sql.gz";
     sha256 = "0qkmzvfd1aby3ilnps89zkhrgvs5xc98c38wq4z8akgxz05fq6kn";
   };
 
