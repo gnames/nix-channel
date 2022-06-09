@@ -11,7 +11,7 @@ stdenv.mkDerivation rec {
   name = pname + "-" + version;
 
   src = fetchurl {
-    url = data.url + data.${name}.file;
+    url = data.gn.url + data.${name}.file;
     sha256 = data.${name}.sha256;
   };
 
